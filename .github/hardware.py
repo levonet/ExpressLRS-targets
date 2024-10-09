@@ -19,6 +19,8 @@ hardware_fields = {
     "serial_tx": FieldType.OUTPUT,
     "serial1_rx": FieldType.INPUT,
     "serial1_tx": FieldType.OUTPUT,
+    "wire_rx": FieldType.INPUT,
+    "wire_tx": FieldType.OUTPUT,
     "radio_busy": FieldType.INPUT,
     "radio_busy_2": FieldType.INPUT,
     "radio_dio0": FieldType.INPUT,
@@ -138,6 +140,7 @@ field_groups = {
         # at-least one of the third group must also be defined
         [["serial_rx", "serial_tx"], [], []],
         [["serial1_rx"], ["serial1_tx"], []],
+        [["wire_rx", "wire_tx"], [], []],
         [["power_min", "power_high", "power_max", "power_default", "power_control", "power_values"], [], []],
         [["debug_backpack_baud", "debug_backpack_rx", "debug_backpack_tx"], [], []],
         [["use_backpack"], ["debug_backpack_baud", "debug_backpack_rx", "debug_backpack_tx"], []],

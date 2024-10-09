@@ -1,8 +1,8 @@
 {
     "serial_rx": 13,
     "serial_tx": 13,
-    "wire_rx": 3,
-    "wire_tx": 1,
+    "wire_rx": 16,
+    "wire_tx": 17,
     "button": 0,
     "led": 2
 }
