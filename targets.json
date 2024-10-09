@@ -592,6 +592,30 @@
                 "platform": "esp32-s3",
                 "firmware": "Unified_ESP32S3_2400_RX"
             }
+        },
+        "tx_dual": {
+            "wire": {
+                "product_name": "DIY ESP32 Wire TX",
+                "lua_name": "Wire TX",
+                "layout_file": "DIY Wire.json",
+                "upload_methods": ["uart", "wifi"],
+                "min_version": "3.3.0",
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_wire_TX_via_ETX",
+                "prior_target_name": "DIY_Wire_TX_ESP32"
+            }
+        },
+        "rx_dual": {
+            "wire": {
+                "product_name": "DIY ESP32 Wire RX",
+                "lua_name": "Wire RX",
+                "layout_file": "DIY Wire.json",
+                "upload_methods": ["uart", "wifi"],
+                "min_version": "3.3.0",
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_wire_RX_via_UART",
+                "prior_target_name": "DIY_Wire_RX_ESP32"
+            }
         }
     },
     "emax": {
